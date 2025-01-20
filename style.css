@@ -15,11 +15,12 @@
     --discord-community: #d3d3d3;
     --discord-technology: #228b22;
     --discord-info: #23272a;
-    --discord-first-info: #f08080;
+    --discord-first-info: #7288d9;
     --discord-second-info: #23272a;
     --discord-end-log: #7fffd4;
     --discord-btn: #ffb6c1;
-    --discord-btn-tech: #8ea1e1;    
+    --discord-btn-tech: #8ea1e1;
+    --discord-btn-sign: #8ea1e1;    
 
 
 }
@@ -49,13 +50,7 @@ header{
         text-align: end;
         flex-grow: 1;
     }
-    .btn-login{
-        padding: 7px;
-        border-radius: 13px;
-        border: none;
-        font-size: 12px;
-        background-color: white;
-    }
+    
 
     ul{
         display: flex;
@@ -66,6 +61,14 @@ header{
         font-weight: bold;
         font-size: 15px;
     }
+}
+
+.btn-login{
+    padding: 7px;
+    border-radius: 13px;
+    border: none;
+    font-size: 12px;
+    background-color: white;
 }
 
 .jumbotron{
@@ -196,6 +199,10 @@ header{
 
         h3{
             padding: 40px 0 20px 0;
+            background-image: url(./img/stars.svg);
+            background-size: 500px;
+            background-repeat: no-repeat;
+            background-position: center;
         }
 
         button{
@@ -229,14 +236,43 @@ footer{
     width: 15%;
     min-height: 500px;
     border: 1px solid black;
+    padding: 30px;
+
+    ul{
+        list-style: none;
+        color: white;
+        
+        li:first-child{
+            color: var(--discord-first-info);
+            font-weight: bold;
+        }
+
+        li{
+            margin-bottom: 10px;
+        };
+    }
     
-}
+}  
 
 .first-info{
-    background-color: var(--discord-first-info);
     width: 40%;
     min-height: 500px;
     border: 1px solid black;
+    padding: 30px;
+
+   h3{
+    padding: 20px 200px 20px 0;
+    color: var(--discord-first-info);
+    font-size: 25px;
+   }
+
+   span{
+    color: white;
+   }
+
+   .social{
+    padding: 10px 0;
+   }
 }
 
 hr{
@@ -248,15 +284,16 @@ hr{
     align-items: center;
     justify-content: space-between;
     min-height: 100px;
-    background-color: var(--discord-end-log);
     margin-top: 20px;
 }
 
 .log-item{
     min-width: 70px;
-    background-color: var(--discord-btn);
     border: 1px solid black;
     text-align: center;
     line-height: 30px;
-}
 
+    button{
+        background-color: var(--discord-btn-sign);
+    }
+}
