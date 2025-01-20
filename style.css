@@ -49,10 +49,11 @@ header{
         flex-grow: 1;
     }
     .btn-login{
-        padding: 5px;
-        border-radius: 8px;
+        padding: 7px;
+        border-radius: 13px;
         border: none;
         font-size: 12px;
+        background-color: white;
     }
 
     ul{
@@ -67,17 +68,43 @@ header{
 }
 
 .jumbotron{
-    display: flex;
-    align-items: center;
-    justify-content: center;
     min-height: 450px;
-    background-color: var(--discord-jumbotron);
+    background-image: url(./img/jumbo.png);
+    background-size: cover;
+    color: white;
 }
 
 .jb{
-    background-color: var(--discord-jb);
-    width: 700px;
-    height: 350px;
+    width: 70%;
+    margin: auto;
+    text-align: center;
+    padding: 80px;
+
+    h1{
+        font-size: 45px;
+        padding-bottom: 40px;
+    }
+
+    p{
+        padding: 0 110px;
+        padding-bottom: 20px;
+    }
+
+    button{
+        border-radius: 20px;
+        padding: 10px 15px;
+        font-weight: 500;
+        border: none; 
+    }
+
+    .btn-download{
+        background-color: white;
+    }
+
+    .btn-open{
+        background-color: black;
+        color: white;
+    }
 }
 
 
