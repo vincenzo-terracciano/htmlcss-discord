@@ -162,6 +162,19 @@ header{
     background-position: center;
 }
 
+.fd-left{
+    background-image: url(./img/item3.svg);
+    background-repeat: no-repeat;
+    background-size: 450px;
+    background-position: center;
+    width: 60%;
+    min-height: 400px;
+}
+
+.fd-right{
+    padding: 50px 140px;
+}
+
 .tech-sec{
     background-color: var(--discord-community);
     padding: 40px;
