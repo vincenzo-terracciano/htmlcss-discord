@@ -16,9 +16,10 @@
     --discord-technology: #228b22;
     --discord-info: #23272a;
     --discord-first-info: #f08080;
-    --discord-second-info: #20b2aa;
+    --discord-second-info: #23272a;
     --discord-end-log: #7fffd4;
     --discord-btn: #ffb6c1;
+    --discord-btn-tech: #8ea1e1;    
 
 
 }
@@ -135,7 +136,6 @@ header{
 
 .community{
     display: flex;
-    align-items: center;
     padding: 40px;
     background-color: var(--discord-community);
 }
@@ -176,14 +176,43 @@ header{
 }
 
 .tech-sec{
-    background-color: var(--discord-community);
     padding: 40px;
+
+    .technology{
+        min-height: 600px;
+        text-align: center;
+
+        h2{
+            padding: 20px;
+        }
+
+        p{
+            padding: 0 185px;
+        }
+
+        img{
+            width: 800px;
+        }
+
+        h3{
+            padding: 40px 0 20px 0;
+        }
+
+        button{
+                border-radius: 20px;
+                padding: 10px 15px;
+                font-weight: 500;
+                border: none; 
+            }
+
+        .btn-tech{
+            background-color: var(--discord-btn-tech);
+            color: white;
+        }
+    }
 }
 
-.technology{
-    background-color: var(--discord-technology);
-    height: 600px;
-}
+
 
 footer{
     background-color: var(--discord-info);
