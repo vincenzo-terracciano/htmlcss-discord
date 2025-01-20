@@ -133,26 +133,33 @@ header{
     }
 }
 
-.comm-sec{
-    background-color: var(--discord-community);
-}
-
 .community{
     display: flex;
     align-items: center;
     padding: 40px;
+    background-color: var(--discord-community);
 }
 
 .com-left{
-    background-color: var(--discord-inv-right);
     width: 40%;
-    height: 400px;
+    min-height: 400px;
+    text-align: left;
+    padding: 80px 140px;
+
+    h2{
+        font-size: 30px;
+        padding-bottom: 20px;
+    }
+    
 }
 
 .com-right{
-    background-color: var(--discord-inv-left);
     width: 60%;
-    height: 400px;
+    min-height: 400px;
+    background-image: url(./img/item2.svg);
+    background-repeat: no-repeat;
+    background-size: 450px;
+    background-position: center;
 }
 
 .tech-sec{
