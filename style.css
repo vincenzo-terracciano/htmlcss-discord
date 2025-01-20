@@ -2,10 +2,11 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 :root{
-    --discord-title: #add8e6;
+    --discord-title: #3161e0;
     --discord-logo: #daa520;
     --discord-jumbotron: #00008b;
     --discord-jb: #ee82ee;
@@ -24,32 +25,46 @@
 
 header{
     background-color: var(--discord-title);
+    padding: 10px;
+
+    .container{
+        width: 80%;
+        margin: auto;
+    }
+    
+    .d-flex{
+        display: flex;
+    }
+
+    .item{  
+        flex-grow: 1;
+    }
+
+    .item-central{
+        flex-grow: 2;
+     }
+
+    .item-login{
+        text-align: end;
+        flex-grow: 1;
+    }
+    .btn-login{
+        padding: 5px;
+        border-radius: 8px;
+        border: none;
+        font-size: 12px;
+    }
+
+    ul{
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+        list-style: none;
+        color: white;
+        font-weight: bold;
+        font-size: 15px;
+    }
 }
-
-.container{
-    width: 80%;
-    margin: auto;
-}
-
-.d-flex{
-    display: flex;
-    align-items: center;
-    min-height: 50px;
-}
-
-.item{
-    background-color: var(--discord-logo);
-    line-height: 30px;
-    width: 15%;
-    border: 1px solid black;
-    text-align: center;
-}
-
-.item-central{
-   flex-grow: 1;
-}
-
-
 
 .jumbotron{
     display: flex;
