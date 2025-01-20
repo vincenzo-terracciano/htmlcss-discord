@@ -107,28 +107,30 @@ header{
     }
 }
 
-
-.invi-sec{
-    background-color: white;
-}
-
 .invite-only{
     display: flex;
-    align-items: center;
     padding: 40px;  
-
 }
 
 .inv-left{
-    background-color: var(--discord-inv-left);
+    background-image: url(./img/item1.svg);
+    background-repeat: no-repeat;
+    background-size: 450px;
+    background-position: center;
     width: 60%;
-    height: 400px;
+    min-height: 400px;
 }
 
 .inv-right{
-    background-color: var(--discord-inv-right);
+    text-align: left;
     width: 40%;
-    height: 400px;
+    min-height: 400px;
+    padding: 20px 140px;
+
+    h2{
+        font-size: 30px;
+        padding-bottom: 20px;
+    }
 }
 
 .comm-sec{
