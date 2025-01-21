@@ -41,6 +41,10 @@ header{
 
     .item{  
         flex-grow: 1;
+
+        &:hover{
+            cursor: pointer;
+        }
     }
 
     .item-central{
@@ -61,6 +65,13 @@ header{
         color: white;
         font-weight: bold;
         font-size: 15px;
+
+        li{
+            &:hover{
+                cursor: pointer;
+                color: lightgray;
+            }
+        }
     }
 }
 
@@ -70,6 +81,11 @@ header{
     border: none;
     font-size: 12px;
     background-color: white;
+
+    &:hover{
+        cursor: pointer;
+        background-color: lightgray;
+    }
 }
 
 .jumbotron{
@@ -100,15 +116,27 @@ header{
         padding: 10px 15px;
         font-weight: 500;
         border: none; 
+
+        &:hover{
+            cursor: pointer;
+        }
     }
 
     .btn-download{
         background-color: white;
+        
+        &:hover{
+            background-color: lightgray;
+        }
     }
 
     .btn-open{
         background-color: black;
         color: white;
+
+        &:hover{
+            background-color: rgb(31, 31, 31);
+        }
     }
 }
 
@@ -210,6 +238,11 @@ header{
         .btn-tech{
             background-color: var(--discord-btn-tech);
             color: white;
+
+            &:hover{
+                background-color: lightskyblue;
+                cursor: pointer;
+            }
         }
     }
 }
@@ -237,10 +270,20 @@ footer{
         li:first-child{
             color: var(--discord-first-info);
             font-weight: bold;
+
+            &:hover{
+                color: lightskyblue;
+                cursor: pointer;
+            }
         }
 
         li{
             margin-bottom: 10px;
+
+            &:hover{
+                color: lightgray;
+                cursor: pointer;
+            }
         };
     }
     
@@ -284,6 +327,12 @@ hr{
 
     button{
         background-color: var(--discord-btn-sign);
+        color: white;
+
+        &:hover{
+            background-color: lightskyblue;
+            cursor: pointer;
+        }
     }
 
     img{
